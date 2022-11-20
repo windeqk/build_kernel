@@ -20,7 +20,7 @@ config = {
 
 		# type: str
 		# Common name of the kernel
-		"kernel_name": "JMT-kernul",
+		"kernel_name": "JMT",
 
 		# type: str
 		# Common version of the kernels

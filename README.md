@@ -25,7 +25,7 @@ pip3 install build_kernel
 ## Instructions
 
 ```sh
-python3 -m build_kernel
+python3 -m build_kernel vayu
 ```
 
 ## License
