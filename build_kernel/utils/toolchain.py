@@ -84,7 +84,7 @@ class GccToolchain(_GccToolchain):
 
 class _ClangToolchain(_Toolchain):
 	BASE_PATH = toolchains_path / "clang"
-	BASE_REMOTE = "https://github.com/SebaUbuntu/toolchains_clang"
+	BASE_REMOTE = "https://github.com/windeqk/toolchains_clang"
 
 	def __init__(self, version: str):
 		super().__init__(version, self.BASE_PATH / version, self.BASE_REMOTE, "clang")
@@ -127,8 +127,9 @@ class _ClangToolchain(_Toolchain):
 class ClangToolchain(_ClangToolchain):
 	VERSIONS = {
 		"r416183b1": _ClangToolchain("r416183b1"),
+		"r437112": _ClangToolchain("r437112"),
 	}
-	DEFAULT = VERSIONS["r416183b1"]
+	DEFAULT = VERSIONS["r437112"]
 
 	@classmethod
 	def from_version(cls, version: str) -> _ClangToolchain:
